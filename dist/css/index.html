@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1200px)" href="mobile.css"> -->
+</head>
+<body>
+    <header>
+      <nav class="navbar-section">
+        <h1 class="style-h1">Travel With Us</h1>
+        <div class="account-section">
+            <a href="#" class="style-a">Account</a>
+            <i class="fas fa-house-user fa-3x" style="color: rgb(180, 89, 89)"; ></i>
+        </div>
+      </nav>
+  </header>
+  <section id="section-main">
+    <form id="form-group" action="#">
+        <div class="form-item">
+        <label class="style-l" for="Where">Where you go ?</label>
+        <input class="style-p" id="Where" list="regions" placeholder="select a region">
+            <datalist id="regions">
+              <option value="USA"></option>
+              <option value="UK"></option>
+              <option value="Iran"></option>
+              <option value="China"></option>
+            </datalist>
+      </div>
+      <div class="form-item">
+        <label class="style-l" for="Check in">CheckIn</label>
+        <input class="style-p1"  class="date" type="text" id="Check in" name="Check in" placeholder="add to date"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')">
+      </div>
+      <div class="form-item">
+        <label class="style-l" for="Where">CheckOut</label>
+        <input class="date" type="text" id="check out" placeholder="add to date"  onfocus="(this.type='date')"
+        onblur="(this.type='text')">
+      </div>
+      <button class="style-btn" type="submit">Search</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import 'reset';  
+@import 'variables';
+body {
+    font-family : $font-family ;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    background: url('./../img/1.jpeg') no-repeat top center/cover;
+    height: 100vh;
+}
+/* STYLE SECTION  */
+.navbar-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.style-h1{
+font-family:$font-family;
+font-size: 1.5rem;
+padding-left: 5rem;
+margin: 1rem 3rem;
+color: $lightgreenColor;
+}
+.account-section{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    background:$lightColor;
+        .style-a{
+        color: $lightgreenColor;
+        font-size: .8rem;
+        margin: .2rem;
+        text-decoration: none;
+    }
+}
+#section-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+#form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $lightColor;
+    padding: 1rem;
+    border-radius: 15px;
+      .style-btn{
+          padding: .5rem 2rem;
+          background: $lightgreenColor;
+          color: $lightColor;
+          font-size: 1rem;
+          border-style: none;
+          border-radius:10px ;
+          cursor: pointer;
+      }
+                  div:nth-child(3){
+              border-style: none;
+              }
+  }
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: $lightGrayColor solid .1rem;
+       .style-l{
+            display: inline-block;
+            font-size: .8rem;
+             }
+            input{
+                border-style: none;
+                text-align: center;
+                
+    }
+}
+.date {
+    width: 100%;
+    position: relative;
+    text-transform: lowercase;
+     }
+    .date::-webkit-calendar-picker-indicator {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    text-transform: lowercase;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    }
+@import 'media';
